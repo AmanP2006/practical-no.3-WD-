@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Practical No.3 (WD) — HTML5 Elements Demo</title>
+  <style>
+    body{font-family: Arial,system-ui,Segoe UI,Helvetica,Arial;line-height:1.5;margin:1rem}
+    header,nav,main,section,footer{display:block}
+    nav a{margin-right:1rem}
+    figure{max-width:320px}
+    .example{background:#f9f9f9;border:1px solid #eee;padding:0.75rem;margin:0.5rem 0}
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="top">Practical No.3 (WD) — HTML5 Elements Demo</h1>
+    <nav>
+      <a href="#text-formatting">Text Formatting</a>
+      <a href="#lists">Lists</a>
+      <a href="#links">Links</a>
+      <a href="#media">Media</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="text-formatting">
+      <h2>Text Formatting</h2>
+      <p>This paragraph shows <strong>bold</strong>, <em>italic</em>, <u>underline</u>, and <small>small text</small>.</p>
+      <p>Use <mark>highlight</mark>, <sub>subscript</sub>, and <sup>superscript</sup> as needed (e.g., H<sub>2</sub>O, X<sup>2</sup>).</p>
+      <div class="example">
+        <p><strong>Example:</strong> The word <em>important</em> can be emphasized and the code is shown inline: <code>console.log('hi')</code>.</p>
+      </div>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Apples</li>
+        <li>Bananas
+          <ul>
+            <li>Cavendish</li>
+            <li>Plantain</li>
+          </ul>
+        </li>
+        <li>Cherries</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Preheat oven</li>
+        <li>Mix ingredients</li>
+        <li>Bake for 30 minutes</li>
+      </ol>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+    </section>
+
+    <section id="links">
+      <h2>Hyperlinks</h2>
+      <p>Internal link: <a href="#media">Jump to Media section</a></p>
+      <p>External link: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN HTML Reference</a></p>
+      <p>Email link: <a href="mailto:example@example.com">Send an email</a></p>
+    </section>
+
+    <section id="media">
+      <h2>Marquee and Images</h2>
+      <p>Note: <em>marquee</em> is obsolete but shown here per the exercise.</p>
+      <marquee behavior="scroll" direction="left">Welcome to Practical No.3 — HTML5 demo! ★</marquee>
+
+      <h3>Image (external)</h3>
+      <figure>
+        <img src="https://via.placeholder.com/320x180.png?text=Placeholder+Image" alt="Placeholder" width="320" height="180">
+        <figcaption>Figure: placeholder image with alt text.</figcaption>
+      </figure>
+
+      <h3>Image with link</h3>
+      <p><a href="#top">Back to top</a> — click the image to visit an external site:</p>
+      <a href="https://www.example.com" target="_blank" rel="noopener">
+        <img src="https://via.placeholder.com/120.png?text=Visit" alt="Visit example site" width="120" height="120">
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for Practical No.3 (WD). Contact: <a href="mailto:instructor@example.edu">instructor@example.edu</a></p>
+  </footer>
+</body>
+</html>
